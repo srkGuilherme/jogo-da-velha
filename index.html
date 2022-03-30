@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1." />
+    <title>Jogo da Velha</title>
+    <link rel="icon" href="./assets/pageIcon.png" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body onload="nextPlayer()">
+    <header class="header"><h1>Jogo da Velha</h1></header>
+    <div>
+      Jogador:
+      <div class="jogador" id="jogador"></div>
+    </div>
+    <div class="stage">
+      <div>
+        <div onclick="playerClick()" id="0" class="square"></div>
+        <div onclick="playerClick()" id="1" class="square"></div>
+        <div onclick="playerClick()" id="2" class="square"></div>
+      </div>
+      <div>
+        <div onclick="playerClick()" id="3" class="square"></div>
+        <div onclick="playerClick()" id="4" class="square"></div>
+        <div onclick="playerClick()" id="5" class="square"></div>
+      </div>
+      <div>
+        <div onclick="playerClick()" id="6" class="square"></div>
+        <div onclick="playerClick()" id="7" class="square"></div>
+        <div onclick="playerClick()" id="8" class="square"></div>
+      </div>
+    </div>
+    <div class="hide" id="vencedor"></div>
+    <button onclick="reset()" class="botão"><img id="restartIcon" src="./assets/restart_icon.png"></img> </button>
+    <script src="./script.js"></script>
+    <script src="./checarGameOver.js"></script>
+  </body>
+</html>

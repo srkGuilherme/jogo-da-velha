@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;800&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.square {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: rgb(216, 216, 216);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.jogador {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+
+.stage {
+  margin: auto;
+  width: 350px;
+  height: 350px;
+}
+
+.square:hover {
+  box-shadow: inset 0px 0px 5px;
+}
+
+.botão {
+  padding: 5px;
+  margin: 10px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#vencedor {
+  padding: 10px;
+  background: rgb(0, 255, 106);
+  border-radius: 15px;
+  width: 310px;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.classX {
+  background-image: url(./assets/X_icon.png);
+  background-size: cover;
+}
+.classO {
+  background-image: url(./assets/O_icon.png);
+  background-size: cover;
+}
+
+#restartIcon {
+  height: 100%;
+}
